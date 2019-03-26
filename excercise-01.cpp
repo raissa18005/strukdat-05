@@ -45,7 +45,19 @@ void insertBefore(Pembalap* &head, int nomorKey, Pembalap* node){
 	}
 }
 
-void deleteByKey(Pembalap* &head, int nomorKey, Pembalap* &deletedNode);
+void deleteByKey(Pembalap* &head, int nomorKey, Pembalap* &deletedNode){
+      Pembalap pBantu;
+      pBantu=head;
+      while(pBantu!=NULL){
+        if(pBantu->prev==nomorkey){
+          if(pBantu->next==NULL){
+            Pembalap last;
+            last=head;
+        while(last->next)
+       }
+      }
+     }
+}
 
 void search(Pembalap* &firstNode, int nomorKey, Pembalap* &pToUpdate){
 	pToUpdate=firstNode;
@@ -71,9 +83,17 @@ void traversal(Pembalap* head){
 	}
 }
 
-void sortingByNomor(Pembalap* &head);
+void sortingByNomor(Pembalap* &head){
+      Pembalap pBantu;
+      pBantu=head;
+      while(pBantu!=NULL){
+        if(pBantu->nomor > pBantu->next->nomor){
 
-void update(Pembalap* firstNode, int nomorKey);
+        }
+      }
+}
+
+//void update(Pembalap* firstNode, int nomorKey);
 
 int main() {
 	Pembalap* head = NULL;
